@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="id">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Pembelian Tiket Safera</title>
+    <link rel="stylesheet" href="tiket.css" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <div class="container">
+      <h1>Pembelian Tiket Safera</h1>
+      <form id="ticketForm">
+        <div class="form-group">
+          <label for="category">Kategori:</label>
+          <select id="category" onchange="toggleOptions()">
+            <option value="siswa">Siswa</option>
+            <option value="umum">Umum</option>
+          </select>
+        </div>
+
+        <div id="umumOptions" class="form-group hidden">
+          <label for="day">Pilih Hari:</label>
+          <select id="day">
+            <option value="hari1">Hari 1 - Rp 15.000</option>
+            <option value="hari2">Hari 2 - Rp 25.000</option>
+            <option value="hari3">Hari 3 - Rp 35.000</option>
+            <option value="fullDay">Full Day - Rp 75.000</option>
+          </select>
+        </div>
+
+        <button type="submit">Beli Tiket</button>
+      </form>
+    </div>
+
+    <script src="tiket.js"></script>
+  </body>
+</html>
